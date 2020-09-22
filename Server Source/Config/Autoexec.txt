@@ -1,0 +1,16 @@
+; Mail server autobooting script
+StartService activelog
+StartService pop3
+StartService SMTP
+ StartService WEBMAIL
+; Uncomment the following line to enable sidebar autohiding
+;StartService SidebarAutoHide
+; Uncomment the following line to make the app start in system tray
+;StartService Systray
+; Uncomment the following line to enable console logging
+StartService keylog
+message Welcome to your XCyteMail server!
+message Server version: 1.0.0
+set ServerOwner=Andrew Cranston
+set ServerVersion=1.1.21
+set ServerCode=Hybrid/X86XCyteMail

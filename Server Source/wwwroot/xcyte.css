@@ -1,0 +1,164 @@
+BODY {
+	COLOR: #000000; MARGIN-LEFT: 0px; MARGIN-RIGHT: 0px; MARGIN-TOP: 2px
+}
+A {
+	FONT-FAMILY: tahoma,sans-serif; FONT-SIZE: 11px
+}
+BODY {
+	FONT-FAMILY: tahoma,sans-serif; FONT-SIZE: 11px
+}
+INPUT {
+	FONT-FAMILY: tahoma,sans-serif; FONT-SIZE: 11px
+}
+OPTION {
+	FONT-FAMILY: tahoma,sans-serif; FONT-SIZE: 11px
+}
+SELECT {
+	FONT-FAMILY: tahoma,sans-serif; FONT-SIZE: 11px
+}
+TABLE {
+	FONT-FAMILY: tahoma,sans-serif; FONT-SIZE: 11px
+}
+TD {
+	FONT-FAMILY: tahoma,sans-serif; FONT-SIZE: 11px
+}
+TR {
+	FONT-FAMILY: tahoma,sans-serif; FONT-SIZE: 11px
+}
+TABLE {
+	BORDER-BOTTOM: 0px; BORDER-LEFT: 0px; BORDER-RIGHT: 0px; BORDER-TOP: 0px
+}
+A {
+	COLOR: #000099; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+.s {
+	FONT-SIZE: 11px
+}
+.sb {
+	FONT-WEIGHT: bold
+}
+.sBL {
+	COLOR: #003366
+}
+.sBLb {
+	COLOR: #003366; FONT-WEIGHT: bold
+}
+.sBL2b {
+	COLOR: #104a7b; FONT-WEIGHT: bold
+}
+.sw {
+	COLOR: #ffffff
+}
+.swb {
+	COLOR: #ffffff; FONT-WEIGHT: bold
+}
+.uw {
+	COLOR: #ffffff; TEXT-DECORATION: underline
+}
+.flb {
+	COLOR: #000000; FONT-SIZE: 24px; FONT-WEIGHT: bold
+}
+.title {
+	COLOR: #104a7b; FONT-FAMILY: tahoma,san-serif; FONT-SIZE: 13px; FONT-WEIGHT: bold
+}
+.Wf {
+	FONT-SIZE: 12px
+}
+.rmsg TD {
+	FONT-SIZE: 12px
+}
+.rmsg A {
+	FONT-SIZE: 12px
+}
+.rmsg A {
+	FONT-SIZE: 12px
+}
+.ns4Wf {
+	FONT-SIZE: 13px
+}
+.menu {
+	COLOR: #000066; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.menu:hover {
+	TEXT-DECORATION: none
+}
+.tab {
+	COLOR: #ffffff; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+A.tab:hover {
+	TEXT-DECORATION: underline
+}
+.msnNav {
+	COLOR: #d6e7ef; FONT-SIZE: 10px; TEXT-DECORATION: none
+}
+FONT.red {
+	COLOR: #e00505
+}
+TR.H {
+}
+.bttntext {
+	COLOR: #336699; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.Bsbttn {
+	BACKGROUND: #d6e7ef; BORDER-BOTTOM: #104a7b 1px solid; BORDER-LEFT: #afc4d5 1px solid; BORDER-RIGHT: #104a7b 1px solid; BORDER-TOP: #afc4d5 1px solid; COLOR: #000066; CURSOR: hand; FONT-SIZE: 13px; TEXT-DECORATION: none
+}
+.sbttn {
+	BACKGROUND: #d6e7ef; BORDER-BOTTOM: #104a7b 1px solid; BORDER-LEFT: #afc4d5 1px solid; BORDER-RIGHT: #104a7b 1px solid; BORDER-TOP: #afc4d5 1px solid; COLOR: #000066; CURSOR: hand; HEIGHT: 19px; TEXT-DECORATION: none
+}
+.pbttn {
+	BACKGROUND: #d6e7ef; BORDER-BOTTOM: #104a7b 1px solid; BORDER-LEFT: #afc4d5 1px solid; BORDER-RIGHT: #104a7b 1px solid; BORDER-TOP: #afc4d5 1px solid; COLOR: #000066; CURSOR: hand; HEIGHT: 19px; PADDING-LEFT: 4px; PADDING-RIGHT: 4px; PADDING-TOP: 2px; TEXT-DECORATION: none
+}
+.pbttn:hover:unknown {
+	TEXT-DECORATION: none
+}
+.obttn {
+	BACKGROUND: #d6e7ef; COLOR: #777777; PADDING-BOTTOM: 1px; PADDING-LEFT: 6px; PADDING-RIGHT: 6px; PADDING-TOP: 1px; TEXT-DECORATION: none; VERTICAL-ALIGN: middle
+}
+.ns4obttn {
+	BACKGROUND: #d6e7ef; COLOR: #8ca5b5; FONT-SIZE: 12px; TEXT-DECORATION: none
+}
+.ns4sbttn {
+	BACKGROUND: #d6e7ef; BORDER-BOTTOM: #104a7b 1px solid; BORDER-LEFT: #afc4d5 1px solid; BORDER-RIGHT: #104a7b 1px solid; BORDER-TOP: #afc4d5 1px solid; COLOR: #000066; FONT-SIZE: 12px; HEIGHT: 19px; TEXT-DECORATION: none
+}
+.drpdwn {
+	BACKGROUND-COLOR: #d6e7ef; COLOR: #000066
+}
+TABLE.Mtable TD {
+	BORDER-BOTTOM: #c1cdd8 1px solid
+}
+.inPgBrdr {
+	BORDER-BOTTOM: #8ca5b5 1px solid; BORDER-LEFT: #8ca5b5 1px solid; BORDER-RIGHT: #8ca5b5 1px solid; BORDER-TOP: #8ca5b5 1px solid
+}
+.smcRow {
+	BORDER-TOP: #c1cdd8 1px solid
+}
+.smcDiv {
+	BORDER-BOTTOM: #8ca5b5 1px solid; BORDER-LEFT: #8ca5b5 1px solid; BORDER-RIGHT: #8ca5b5 1px solid; BORDER-TOP: #8ca5b5 1px solid; HEIGHT: 117px; MARGIN: 0px; OVERFLOW-X: hidden; OVERFLOW-Y: auto; PADDING-BOTTOM: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px; WIDTH: 344px
+}
+.msglistcntrl TD {
+	BORDER-BOTTOM: medium none
+}
+.tagline {
+	COLOR: #d6e7ef; FONT-WEIGHT: bold; TEXT-DECORATION: none
+}
+.PPModuleTtlTxt {
+	COLOR: #104a7b; FONT-FAMILY: Tahoma, sans-serif
+}
+.PPDesTxt {
+	FONT-FAMILY: Tahoma, san-serif
+}
+.PPModuleBrd {
+	BACKGROUND-COLOR: #dbeaf5
+}
+.PPModuleTtlTbl {
+	BACKGROUND-COLOR: #dbeaf5
+}
+.PPDynamicTbl {
+	BACKGROUND-COLOR: #ffffff
+}
+.PPRSbmtBtn {
+	BACKGROUND: #dbeaf5; BORDER-BOTTOM: #104a7b 1px solid; BORDER-LEFT: #afc4d5 1px solid; BORDER-RIGHT: #104a7b 1px solid; BORDER-TOP: #afc4d5 1px solid; COLOR: #000066; CURSOR: hand; FONT-FAMILY: Tahoma, san-serif; FONT-SIZE: 13px; FONT-WEIGHT: normal; TEXT-DECORATION: none
+}
