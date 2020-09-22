@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>XCyteMail</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<comment>Page created by Crano</comment>
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+</SCRIPT>
+</head>
+
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" height="34" vspace="0" hspace="0">
+  <tr valign="top"> 
+    <td height="56"> 
+      <div align="left">
+        <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#006666">
+          <tr>
+            <td width="33%"><img src="img/tTitle.jpg" width="300" height="30"></td>
+            <td width="67%" background="img/tCutTile01.jpg"> 
+              <div align="left"><img src="img/tCutBit01.jpg" width="90" height="30"><img src="img/tCutTile01.jpg" width="1" height="30"></div>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#006666">
+          <tr>
+            <td>&nbsp;</td>
+          </tr>
+        </table>
+        <div align="left"> 
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td><a href="inbox.asp"><img src="img/bInbox.jpg" width="68" height="20" border="0"></a><a href="compose.asp"><img src="img/bCompose.jpg" width="99" height="20" border="0"></a><a href="settings.asp"><img src="img/bSettings.jpg" width="90" height="20" border="0"></a><a href="logout.asp"><img src="img/bLogout.jpg" width="87" height="20" border="0"></a><img src="img/bEndBit01.jpg" width="87" height="20"></td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+          <img src="img/bEndBit01.jpg" width="87" height="20"></div>
+      </div>
+    </td>
+  </tr>
+</table>
+<div align="center">
+<B><Replace><B>
+</div>
+</body>
+</html>

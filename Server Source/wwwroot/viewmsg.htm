@@ -1,0 +1,204 @@
+<html>
+<head>
+<title>XCyteMail</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" href="XCyteMail.css" type="text/css">
+<script language="JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function MM_goToURL() { //v3.0
+  var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+  for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#006699" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<!--$messageid$ -->
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <table border=0 cellpadding=0 cellspacing=0 width="100%" class="TopBarLinks">
+        <tbody> 
+        <tr> 
+          <td valign=top width=162 class="TopBarLinks" background="bitofftile.jpg"><img src="TitleOff.jpg" width="160" height="40"></td>
+          <td background="bitofftile.jpg" 
+            noWrap class="TopBarLinks" width="36"><a class=menu 
+            href="home.asp" 
+            tabindex=120><font class=TopBarLinks>Home</font></a>&nbsp;</td>
+          <td class="TopBarLinks" width="35"><img src="bitonjoin.jpg" width="35" height="40"></td>
+          <td background="bitontile.jpg" noWrap class="TopBarLinks" width="43"> 
+            <div align="center"><a 
+            class=menu 
+            href="inbox.asp?Folder=Main" 
+            tabindex=121><font class=menu><span class="TopBarLinks">Inbox</span></font></a></div>
+          </td>
+          <td class="TopBarLinks" width="35"><img src="bitonEnder.jpg" width="35" height="40"></td>
+          <td background="bitofftile.jpg" 
+            noWrap class="TopBarLinks" width="57"><a class=menu 
+            href="compose.asp" 
+            tabindex=122><font class=TopBarLinks>Compose</font></a>&nbsp;</td>
+          <td class="TopBarLinks" width="35"><img 
+          src="bitoffjoin.jpg" width="35" height="40"></td>
+          <td background="bitofftile.jpg" 
+            noWrap class="TopBarLinks" width="50"><a class=menu 
+            href="settings.asp" 
+            tabindex=123><font class=TopBarLinks>Settings</font></a>&nbsp;</td>
+          <td class="TopBarLinks" width="15"><img src="bitoffjoin.jpg" width="35" height="40"></td>
+          <td align=right 
+          background="bitofftile.jpg" 
+          bgcolor=#336699 noWrap 
+  width="282" class="TopBarLinks">Current User: $Currentuser$</td>
+        </tr>
+        </tbody> 
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" height="20">
+        <tr> 
+          <td width="196" background="bitMainTile.jpg" height="34"> 
+            <form name="form1">
+              <span class="TopBarLinks"><font color="#FFFFFF" class="TopBarLinks">Goto</font> 
+              <select name="menu1" onChange="MM_jumpMenu('parent',this,0)">
+                <option value="Inbox.asp?Folder=Main">My Inbox</option>
+                <option value="Inbox.asp?Folder=Filtered" selected>Filtered Items</option>
+                <option value="Inbox.asp?Folder=Trash">Trash</option>
+              </select>
+              </span> 
+            </form>
+          </td>
+          <td width="548" background="bitMainTile.jpg" height="34" valign="middle"> 
+            <div align="right" class="TopBarLinks"> 
+              <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr> 
+                  <td width="39%"><b>Current Folder: $InboxFolder$</b></td>
+                  <td width="61%"> 
+                    <div align="right"><a href="logout.asp" class="TopBarLinks">Click 
+                      here to log out or change users</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" border="1" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+        <tr> 
+          <td width="197" valign="top" bgcolor="#FFFFFF"> 
+            <div align="center"> 
+              <table width="90%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+                <tr> 
+                  <td> 
+                    <div align="center"> 
+                      <table width="100%" border="0" cellspacing="1" cellpadding="0" bgcolor="#999999">
+                        <tr> 
+                          <td> 
+                            <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><b><font color="#FFFFFF">Message 
+                              Tools: </font></b></font></div>
+                          </td>
+                        </tr>
+                      </table>
+                      <a href="del.asp?msg=$messageid$&folder=$InboxFolder$">Delete</a><br>
+                      <a href="move.asp?msg=$messageid$&fromfolder=$InboxFolder$&tofolder=Filtered">Move 
+                      to Filtered</a><br>
+                      <a href="move.asp?msg=$messageid$&fromfolder=$InboxFolder$&tofolder=Trash">Move 
+                      to Trash Can</a><br>
+                      <a href="AddFilter.asp?sender=$msgfrom$">Add Sender to Filter</a></div>
+                  </td>
+                </tr>
+              </table>
+              <span class="TopBarSel"><br>
+              </span> 
+              <table width="90%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+                <tr> 
+                  <td> 
+                    <div align="center"> 
+                      <table width="100%" cellspacing="1" cellpadding="0" bgcolor="#999999">
+                        <tr> 
+                          <td> 
+                            <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><b>Mail 
+                              Folders: </b></font></div>
+                          </td>
+                        </tr>
+                      </table>
+                      <a href="Inbox.asp?folder=Main">Main Inbox</a><br>
+                      <a href="Inbox.asp?folder=Filtered">Filtered Messages</a><br>
+                      <a href="Inbox.asp?folder=Trash">Trash Can</a></div>
+                  </td>
+                </tr>
+              </table>
+              <span class="TopBarSel"><br>
+              </span> 
+              <table width="90%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+                <tr> 
+                  <td> 
+                    <div align="center"> 
+                      <table width="100%" cellspacing="1" cellpadding="0" bgcolor="#999999">
+                        <tr> 
+                          <td> 
+                            <div align="center"><font face="Arial, Helvetica, sans-serif"><font class="unnamed1" color="#000000"><b><font color="#FFFFFF">Server 
+                              Options: </font></b></font></font></div>
+                          </td>
+                        </tr>
+                      </table>
+                      <a href="Inbox.asp?Folder=Main">Logout of WebMail</a></div>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </td>
+          <td width="553" valign="top"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#999999">
+              <tr> 
+                <td><font face="Arial, Helvetica, sans-serif"><b>\\Email\$CurrentUser$\$InboxFolder$\$messageid$</b></font></td>
+              </tr>
+            </table>
+            <form name="form2" action="InboxUtils.asp">
+              <input type="submit" name="Reply" value="Reply" onClick="MM_goToURL('parent','compose.asp?To=$msgfrom$&amp;Subject=Re:%20$msgsubject$&amp;Body=$MessageData$');return document.MM_returnValue">
+              <input type="submit" name="Forward" value="Forward" onClick="MM_goToURL('parent','compose.asp?Subject=Fwd:%20$msgsubject$&amp;Body=$MessageData$');return document.MM_returnValue">
+              <input type="submit" name="Trash" value="Send to trash" onClick="MM_goToURL('parent','move.asp?msg=$messageid$&amp;fromfolder=$InboxFolder$&amp;tofolder=Trash');return document.MM_returnValue">
+              <input type="submit" name="PrevMSG" value="Prev" onClick="MM_goToURL('parent','prev.asp?msg=$messageid$&amp;folder=$InboxFolder$');return document.MM_returnValue">
+              <input type="submit" name="NextMSG" value="Next" onClick="MM_goToURL('parent','next.asp?msg=$messageid$&amp;folder=$InboxFolder$');return document.MM_returnValue">
+              <br>
+              <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC" bordercolor="#000000">
+                <tr> 
+                  <td><b>To: $msgto$<br>
+                    From: $msgfrom$<br>
+                    Subject: $msgsubject$<br>
+                    CC: $msgcc$<br>
+                    Sent Date: $sentdate$</b></td>
+                </tr>
+              </table>
+              <textarea name="textfield" cols="66" rows="20" wrap="VIRTUAL">$MessageData$</textarea>
+              <input type="hidden" name="MessageID" value="$messageid$">
+              <input type="hidden" name="InboxFolder" value="$InboxFolder$">
+              <input type="hidden" name="MsgFrom" value="$msgfrom$">
+              <input type="hidden" name="MsgSubject" value="$msgsubject$">
+            </form>
+            <br>
+          </td>
+        </tr>
+      </table>
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td> 
+            <div align="center"> 
+              <p class="TopBarLinks"><font color="#CCCCCC">XCyteMail Copyright(C)2003-2005 
+                Andrew Cranston<br>
+                All components of this product are the interlectual property of 
+                XCyteTechnologies Inc. </font></p>
+            </div>
+          </td>
+        </tr>
+      </table>
+      <p class="unnamed1"></p>
+</td>
+  </tr>
+</table>
+<br>
+<br>
+</body>
+</html>

@@ -1,0 +1,258 @@
+<html>
+<head>
+<title>XCyteMail</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" href="xcyte.css" type="text/css">
+</head>
+
+<body bgcolor="#006699" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<script language="JavaScript" src="scripts.js">
+</script>
+<table border=0 cellpadding=0 cellspacing=0 width="750" class="TopBarLinks">
+  <tbody> 
+  <tr> 
+    <td valign=top width=162 class="TopBarLinks" background="bitofftile.jpg"><img src="TitleOff.jpg" width="160" height="40"></td>
+    <td background="bitofftile.jpg" 
+            noWrap class="TopBarLinks" width="36"><a class=menu 
+            href="home.asp" 
+            tabindex=120><font class=TopBarLinks>Home</font></a>&nbsp;</td>
+    <td class="TopBarLinks" width="35"><img src="bitonjoin.jpg" width="35" height="40"></td>
+    <td background="bitontile.jpg" noWrap class="TopBarLinks" width="43"> 
+      <div align="center"><a 
+            class=menu 
+            href="inbox.asp?Folder=Main" 
+            tabindex=121><font class=menu><span class="TopBarLinks">Inbox</span></font></a></div>
+    </td>
+    <td class="TopBarLinks" width="35"><img src="bitonEnder.jpg" width="35" height="40"></td>
+    <td background="bitofftile.jpg" 
+            noWrap class="TopBarLinks" width="57"><a class=menu 
+            href="compose.asp" 
+            tabindex=122><font class=TopBarLinks>Compose</font></a>&nbsp;</td>
+    <td class="TopBarLinks" width="35"><img 
+          src="bitoffjoin.jpg" width="35" height="40"></td>
+    <td background="bitofftile.jpg" 
+            noWrap class="TopBarLinks" width="50"><a class=menu 
+            href="settings.asp" 
+            tabindex=123><font class=TopBarLinks>Settings</font></a>&nbsp;</td>
+    <td class="TopBarLinks" width="15"><img src="bitoffjoin.jpg" width="35" height="40"></td>
+    <td align=right 
+          background="bitofftile.jpg" 
+          bgcolor=#336699 noWrap 
+  width="282" class="TopBarLinks">Current User: $Currentuser$</td>
+  </tr>
+  </tbody> 
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0" height="20">
+  <tr> 
+    <td width="196" background="bitMainTile.jpg" height="34">&nbsp; </td>
+    <td width="548" background="bitMainTile.jpg" height="34" valign="middle"> 
+      <div align="right" class="TopBarLinks">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr> 
+            <td width="39%"><b>Current Folder: $InboxFolder$</b></td>
+            <td width="61%"> 
+              <div align="right"><a href="logout.asp" class="TopBarLinks">Click 
+                here to log out or change users</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+  </tr>
+</table>
+<table width="750" border="1" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+  <tr bgcolor="#FFFFFF"> 
+    <td width="197" valign="top"> 
+      <div align="center"> 
+        <table width="90%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+          <tr> 
+            <td> 
+              <div align="center"> 
+                <table width="100%" border="0" cellspacing="1" cellpadding="0" bgcolor="#999999">
+                  <tr> 
+                    <td> 
+                      <div align="center"><font face="Arial, Helvetica, sans-serif" color="#000000"><b><font color="#FFFFFF">Inbox 
+                        Tools: </font></b></font></div>
+                    </td>
+                  </tr>
+                </table>
+                <a href="DelSel.asp">Delete Selected</a><br>
+                <a href="DelAll.asp">Delete All</a><br>
+                <a href="AddFilter.asp">Add Sender to Filter</a><br>
+                <a href="inboxutils.asp?Trash=Empty">Empty Trash</a></div>
+            </td>
+          </tr>
+        </table>
+        <span class="TopBarSel"><br>
+        </span>
+        <table width="90%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+          <tr> 
+            <td> 
+              <div align="center"> 
+                <table width="100%" cellspacing="1" cellpadding="0" bgcolor="#999999">
+                  <tr> 
+                    <td> 
+                      <div align="center"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF"><b>Mail 
+                        Folders: </b></font></div>
+                    </td>
+                  </tr>
+                </table>
+                <a href="Inbox.asp?folder=Main">Main Inbox</a><br>
+                <a href="Inbox.asp?folder=Filtered">Filtered Messages</a><br>
+                <a href="Inbox.asp?folder=Trash">Trash Can</a></div>
+            </td>
+          </tr>
+        </table>
+        <span class="TopBarSel"><br>
+        </span>
+        <table width="90%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+          <tr> 
+            <td> 
+              <div align="center"> 
+                <table width="100%" cellspacing="1" cellpadding="0" bgcolor="#999999">
+                  <tr> 
+                    <td> 
+                      <div align="center"><font face="Arial, Helvetica, sans-serif"><font class="unnamed1" color="#000000"><b><font color="#FFFFFF">Server 
+                        Options: </font></b></font></font></div>
+                    </td>
+                  </tr>
+                </table>
+                <a href="Inbox.asp?Folder=Main">Logout of WebMail</a></div>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </td>
+    <td width="553" valign="top" nowrap> 
+      <script language=JavaScript>
+var frm = document.hotmail;
+//folderID is declared in the .js file as null, and set here to execute cases specific to Junk Mail Folder.
+folderID = "F000000001";
+function DoEmpty(){	
+if(HMError("C","Are+you+sure+you+want+to+permanently+delete+all+messages+in+this+folder%3f","",""))
+window.location = "http://lw10fd.law10.hotmail.msn.com/cgi-bin/HoTMaiL?curmbox=F000000001&a=e8822aba7dca150dec1ffb3d965be6ef&DoEmpty=1";
+}
+function SynchDrop(){
+if (frm.nullbox)
+frm.nullbox.selectedIndex=frm.tobox.selectedIndex;
+}
+function numChecked()
+{
+j=0;
+for(i=0;i< frm.length;i++)
+{
+e=frm.elements[i];
+if (e.type=='checkbox' && e.name != 'allbox' && e.checked)
+j++;		
+}
+return j;
+}
+function slct1st()
+{
+j=0;
+for(i=0;i< frm.length;i++)
+{
+e=frm.elements[i];
+if (e.type=='checkbox' && e.name != 'allbox' && e.checked)
+if(j==1) e.checked=false;
+else j=1;
+}
+return j;
+}
+function Subm(act,first,dosub)
+{
+num = ((first) ? slct1st(frm) : numChecked(frm));
+if (num>0)
+{
+frm._HMaction.value=act;
+if (dosub)
+frm.submit();
+return true;
+}
+else
+HMError("A","You+didn%27t+select+any+e%2dmail+messages%2e+Click+the+check+box+next+to+the+e%2dmail+message%28s%29+you+want+to+select%2e","","");
+return false;
+}
+function PI(act,first,dosub,selValue)
+{
+if(!selValue)
+{
+frm.tobox.selectedIndex = 0;
+if(frm.nullbox)
+frm.nullbox.selectedIndex = frm.tobox.selectedIndex;
+return false;
+}
+if(selValue == "Create Folder")
+{
+location.href = "/cgi-bin/dofolders?curmbox=F000000001&a=e8822aba7dca150dec1ffb3d965be6ef&Create.x=Create&from=inbox";
+return false;
+}
+if (!Subm(act,first,dosub))
+{
+frm.tobox.selectedIndex=0;
+}
+}
+</script>
+      <form name="form1">
+      <table cellpadding=0 cellspacing=0 id=MsgTable 
+                  width="100%">
+        <input name=curmbox type=hidden 
+                    value=F000000001>
+        <input name=js type=hidden>
+        <input 
+                    name=_HMaction type=hidden>
+        <input name=foo type=hidden 
+                    value=inbox>
+        <input name=page type=hidden>
+
+        <tbody> 
+        <tr bgcolor=#336699> 
+          <td width="1%" bgcolor="#999999">&nbsp;</td>
+          <td height=23 width="1%" bgcolor="#999999"> <span class="MailList"> 
+            <input name=allbox 
+                        onClick=CA(); tabindex=105 
+                        title="Select or de-select all messages" type=checkbox>
+            </span></td>
+          <td bgcolor="#999999" class="MailList"><nobr><font class="swb" color="#FFFFFF">From</font><font color="#FFFFFF">&nbsp;</font></nobr></td>
+          <td bgcolor=#999999 class="MailList"><nobr><font class="sBLb" color="#FFFFFF">Subject</font><font color="#FFFFFF">&nbsp;</font></nobr></td>
+          <td bgcolor="#999999" class="MailList"><nobr><font class=swb 
+                        color=#ffffff>Date</font>&nbsp;</nobr></td>
+          <td align=right bgcolor="#999999" class="MailList"><nobr>&nbsp;<font class=swb 
+                        color=#ffffff>Size</font>&nbsp;</nobr></td>
+        </tr>
+
+
+	<MailList>
+
+        </tbody> 
+      </table>
+      </form>
+      <p class="MailList">&nbsp;</p>
+
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </td>
+  </tr>
+</table>
+<table width="750" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>
+      <div align="center"> 
+        <p class="TopBarLinks"><font color="#CCCCCC">XCyteMail Copyright(C)2003-2005 
+          Andrew Cranston<br>
+          All components of this product are the interlectual property of XCyteTechnologies 
+          Inc. </font></p>
+      </div>
+    </td>
+  </tr>
+</table>
+<p class="Buttons"><br>
+  <br>
+</p>
+</body>
+</html>

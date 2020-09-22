@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script language="JavaScript">
+<!--
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_jumpMenuGo(selName,targ,restore){ //v3.0
+  var selObj = MM_findObj(selName); if (selObj) MM_jumpMenu(targ,selObj,restore);
+}
+//-->
+</script>
+</head>
+
+<body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" bordercolor="#CCCCCC" bgcolor="#CCCCCC">
+  <tr> 
+    <td bgcolor="#CCCCCC" background="tile01.jpg" width="78%"> 
+      <div align="left"><img src="tTitle.jpg" width="270" height="60"></div>
+    </td>
+    <td bgcolor="#CCCCCC" background="tile01.jpg" width="22%" valign="bottom"> 
+      <div align="right"><b><font face="Arial, Helvetica, sans-serif" color="#666666"><a href="logout.asp">Log-out</a></font></b> 
+        <a href="logout.asp"><img src="Logout.jpg" width="32" height="32" border="0"></a> 
+      </div>
+    </td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr> 
+    <td width="21%" bgcolor="#999999" height="86" valign="top" align="center"> 
+      <div align="center"> 
+        <hr>
+        <b><font color="#FFFFFF">Current User:</font></b><br>
+        <font color="#FFFFFF">$CurrentUser$</font><font color="#FFFFFF"><br>
+        <br>
+        Mailbox Folders:<br>
+        </font> 
+        <form name="form1">
+          <select name="FolderMenu" onChange="MM_jumpMenu('parent',this,0)">
+            <option value="inbox.asp" selected>Inbox</option>
+            <option value="filtered.asp">Filtered</option>
+            <option value="trash.asp">Trash</option>
+          </select>
+          <input type="button" name="Button1" value="Go" onClick="MM_jumpMenuGo('FolderMenu','parent',0)">
+        </form>
+        <br>
+        <a href="compose.asp">Compose</a><br>
+        <a href="settings.asp">Settings</a><br>
+        <a href="admin.asp">Admin</a><br>
+        <a href="software.asp">Software Info</a><br>
+        <a href="hardware.asp">Hardware Info</a><br>
+        <a href="eula.asp">Licence Agreement</a><br>
+      </div>
+    </td>
+    <td width="79%" height="86" valign="top" bgcolor="#FFFFFF"> 
+      <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+        <tr> 
+          <td bgcolor="#006699" width="100"> 
+            <div align="center"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Home</font></b></div>
+          </td>
+          <td width="1%" bgcolor="#999999"><b></b></td>
+          <td bgcolor="#006699" width="100"> 
+            <div align="center"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Inbox</font></b></div>
+          </td>
+          <td width="1%" bgcolor="#999999"><b></b></td>
+          <td bgcolor="#006699" width="100"> 
+            <div align="center"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Compose</font></b></div>
+          </td>
+          <td width="1%" bgcolor="#999999"><b></b></td>
+          <td bgcolor="#006699" width="100"> 
+            <div align="center"><b><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Settings</font></b></div>
+          </td>
+        </tr>
+      </table>
+      <div align="center">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#FFFFFF">
+          <tr>
+            <td valign="middle" align="center" height="23"><b>You are currently 
+              using $SizePercent$ of your total mailbox size:</b> <img src="$SizePic$" width="270" height="22"> 
+            </td>
+          </tr>
+        </table>
+        <div align="left">
+          <table width="100%" border="0" cellspacing="0" cellpadding="0">
+            <tr>
+              <td>
+                <form name="form2" method="post" action="">
+                  <div align="center">
+                    <input type="submit" name="DelAll" value="Delete All">
+                    <input type="submit" name="DelSel" value="Delete Sel">
+                    <input type="submit" name="TrashMove" value="Move to Trash">
+                    <input type="submit" name="MoveFiltered" value="Move to Filtered">
+                    <br>
+                    Page $PageStart$ of $PageEnd$<br>
+                    <table width="100%" border="1" cellspacing="0" cellpadding="0" bgcolor="#999999">
+                      <tr> 
+                        <td width="4%"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif"></font></td>
+                        <td width="34%"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">From:</font></td>
+                        <td width="52%"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">Subject:</font></td>
+                        <td width="10%">
+                          <div align="right"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">Size:</font></div>
+                        </td>
+                      </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#CCCCCC">
+                      <tr> 
+                        <td width="4%"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">
+                          <input type="checkbox" name="checkbox" value="checkbox">
+                          </font></td>
+                        <td width="34%">&nbsp;</td>
+                        <td width="52%">&nbsp;</td>
+                        <td width="10%"> 
+                          <div align="right"></div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </form>
+              </td>
+            </tr>
+          </table>
+          <font color="#666666"><b><br>
+          <br>
+          </b></font><font color="#666666"><br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          </font></div>
+      </div>
+    </td>
+  </tr>
+</table>
+<br>
+<p><br>
+</p>
+</body>
+</html>
